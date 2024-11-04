@@ -109,6 +109,61 @@ nav .active {
   font-weight: 400;
   letter-spacing: 50px;
 }
+
+
+
+
+/* this is responsive for heading */
+.hero-content h2 {
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: -10px;
+  font-size: calc(1.5rem + 4vw); /* Scales font size from smaller to larger screens */
+  letter-spacing: calc(2px + 2vw); /* Scales letter-spacing */
+}
+
+@media (max-width: 600px) {
+  .hero-content h2 {
+    font-size: 2.5rem; /* Smaller font for mobile screens */
+    /* letter-spacing: 10px; */
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 500px){
+  .hero-content h2 {
+    font-size: 1.5rem;
+    /* color: red; */
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-content h2 {
+    font-size: 6rem; /* Fixed size for large screens */
+    letter-spacing: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hero-content h1 {
   font-size: 6rem;
   font-weight: 800;
@@ -116,6 +171,9 @@ nav .active {
   text-transform: uppercase;
   margin-top: -10px;
 }
+
+
+
 .hero-content {
   padding-top: 50px;
   display: flex;
@@ -123,6 +181,7 @@ nav .active {
   align-items: center;
 }
 .hero-img {
+  
   width: 47%;
   margin-top: -150px;
   animation: planetAn 120s linear infinite;
